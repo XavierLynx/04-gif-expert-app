@@ -4,7 +4,8 @@ import { GifExpertApp } from './GifExpertApp';
 
 import './index.css';
 
+
 ReactDOM.render(
-    <GifExpertApp categoriaInicial={'flower'}/>,
-    document.getElementById('root')
-)
+  <GifExpertApp />,
+  document.getElementById('root') 
+);
