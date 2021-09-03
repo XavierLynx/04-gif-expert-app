@@ -1,13 +1,21 @@
+// ---------------------------------------------------------------------------------------
+// Componente: AgregarCategoria.jsx
+// ---------------------------------------------------------------------------------------
+// Descripción: Actaliza la lista de categorías que muestra la aplicación
+//
+// Inputs:      referencia a la función 'setCategorias' de GifExpertApp
+// Outputs:     Status 'categorias' de GifExpertApp modificado
+//
+// called from: GifExpertApp
+// 
+// Proccess:    Obtiene el nombre de una nueva categoría y la agrega al estado del compo-  
+//              nente GifExpertApp
+// ---------------------------------------------------------------------------------------
+
 import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 
 export const AgregarCategoria = ({setCategorias}) => {
-// ---------------------------------------------------------------------------------------
-// Descripción: Actaliza la lista de categorías que muestra la aplicación
-// exportado a: GifExpertApp
-// Entrada:     Referencia a la función setCategorias del componente GifExpertApp
-// Salida:      Cambia el estado del componente GifExpertApp agregando una nueva categoría
-// ---------------------------------------------------------------------------------------
 
     const [valorEntrado, setValorEntrado] = useState('');
 

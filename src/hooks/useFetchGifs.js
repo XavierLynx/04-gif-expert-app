@@ -28,12 +28,12 @@ export const useFetchGifs = ( categoria ) => {
     useEffect( () => {
         getGifs( categoria )
             .then ( imgs => {
-                // setTimeout(() => {
-                    setState({
-                        data: imgs,
-                        loading: false   
-                    })
-                // }, 3000);
+
+                setState({
+                    data: imgs,
+                    loading: false   
+                })
+
             })
 
     }, [ categoria ]);

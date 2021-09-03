@@ -1,14 +1,13 @@
 // ---------------------------------------------------------------------------------------
 // Componente   GifGrid.jsx  
 // ---------------------------------------------------------------------------------------
-// Description: Recibe la categoría y obtiene las imagenes relacionadas. Indica el estado
-//              de la carga y al finalizar muestra las imagenes en el navegador. 
+// Description: muestra las imagenes de la categoría, indicando el estado de la descarga.
 //
-// Inputs:      { categoria }
-// Outputs:     { data: images, loading } Lista de imagenes y estado de la carga.
+// Inputs:      {categoria}
+// Outputs:     {images} con las magenes y {loading} con el estado de la carga.
 //
-// Called from: GifExpertApp (component)
-// Call to:     useFetchGifs (custom hook), GifGridItem (component)
+// Called from: <GifExpertApp />
+// Call to:     hook: useFetchGifs(), <GifGridItem />
 //
 // Proccess:    - Obtiene un arreglo de datos de imágenes llamando a useFetchGifs() 
 //              - Muestra el título de la categoría y el estado de la carga.

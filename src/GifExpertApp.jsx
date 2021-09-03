@@ -1,17 +1,17 @@
 // ---------------------------------------------------------------------------------------
 // Componente: GifExpertApp.jsx
 // ---------------------------------------------------------------------------------------
-// Description: Aplicación que muestra imágenes gifs por categoría desde la api.gyphi.com
+// Description: Muestra imágenes gifs de la api.gyphi.com relaionadas a la categoría dada. 
 //
-// Inputs:      categoria
-// Outputs:     Muestra en el navegador imágenes gif relacionadas a una categoría dada
+// Inputs:      categoriaInicial (opcional).
+// Outputs:     Muestra las imágenes obtenidas desde api.gyphi.com
 //
 // called from: index.js
 // call to:     AgregarCategoria, gifGrid.
 //
-// Proccess:    Utiliza la función getGifs() para guardar las imagenes obtenidas de la api
-//              en la variable de estado images[] y procesa cada una de las imágenes 
-//              llamando al componente <GifGridItem /> para que lo muestre en el navegador
+// Proccess:    Utiliza <AgregarCategoria /> para actualizar la lista de categorías.
+//               
+//              
 // ---------------------------------------------------------------------------------------
 
 import React, { useState } from 'react';
